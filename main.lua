@@ -2,7 +2,7 @@ package.path = package.path .. ';./src/lib/?.lua'
 knight = require 'knight'
 
 function love.load()
-  knight:module("KnightLoveExample")
+  knight:module "KnightLoveExample"
   :component("love", {}, function()
     function love.update(delta)
     end
